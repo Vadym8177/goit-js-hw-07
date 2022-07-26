@@ -21,7 +21,7 @@ function createListItems(items) {
 }
 galleryItemsRef.innerHTML = listItems;
 
-const galleryLink = document.querySelector('.gallery').addEventListener('click', e => {
+galleryItemsRef.addEventListener('click', e => {
   e.preventDefault();
 
   if (e.target.nodeName !== 'IMG') {
